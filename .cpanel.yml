@@ -3,6 +3,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOY_PATH=/home/enstedu/dashboard.enst.edu.mx/src/
+    - export DEPLOY_PATH=/home/enstedu/posgrados.enst.edu.mx/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp styles.css $DEPLOYPATH
