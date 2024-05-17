@@ -1,0 +1,10 @@
+# .cpanel.yml
+---
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/YOUR_CPANEl_USERNAME/public_html
+    - echo "Building Angular application"
+    - npm install --production
+    - npm run build -- --output-path=dist
+    - echo "Deploying to $DEPLOY_PATH"
+    - rsync -av --delete dist/ $DEPLOY_PATH/
