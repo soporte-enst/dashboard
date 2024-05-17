@@ -4,8 +4,7 @@
 deployment:
   tasks:
     - export DEPLOY_PATH=/home/enstedu/dashboard.enst.edu.mx/angular_app
-    - echo "Building Angular application"
-    - /opt/cpanel/ea-nodejs16/bin/npm install --production
-    - /opt/cpanel/ea-nodejs16/bin/npm run build -- --output-path=dist
-    - echo "Deploying to $DEPLOY_PATH"
-    - rsync -av --delete dist/ $DEPLOY_PATH/
+    - /opt/cpanel/ea-nodejs18/bin/npm install --production
+    - /opt/cpanel/ea-nodejs18/bin/npm run build -- --output-path=dist
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp styles.css $DEPLOYPATH
