@@ -1,8 +1,7 @@
-# .cpanel.yml
----
----
 deployment:
   tasks:
-    - export DEPLOY_PATH=/home/enstedu/posgrados.enst.edu.mx/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp styles.css $DEPLOYPATH
+    - export DEPLOY_PATH=/home/enstedu/posgrados.enst.edu.mx
+    - cd src
+    - /opt/cpanel/ea-nodejs18/bin/npm install
+    - /opt/cpanel/ea-nodejs18/bin/ng build --prod --output-path=dist
+    - rsync -av --delete dist/ $DEPLOY_PATH/
