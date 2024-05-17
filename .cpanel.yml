@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOY_PATH=/home/enstedu/dashboard.enst.edu.mx/public_html/src
+    - export DEPLOY_PATH=/home/enstedu/public_html
     - /bin cp * $DEPLOYPATH
     - /bin/cp -r * $DEPLOYPATH
