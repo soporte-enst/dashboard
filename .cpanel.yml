@@ -1,4 +1,5 @@
 deployment:
   tasks:
     - export DEPLOY_PATH=/home/enstedu/posgrados.enst.edu.mx
-    - rsync -a --delete-after dist/ $DEPLOY_PATH/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
