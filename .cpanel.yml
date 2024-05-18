@@ -4,4 +4,4 @@ deployment:
   - export NODE_ENV=production
   - /usr/local/bin/npm install
   - /usr/local/bin/npm run build
-  - /bin/cp -R dist/* /home/enstedu/dashboard.enst.edu.mx/
+  - /bin/cp -R dist/* /home/enstedu/dashboard.enst.edu.mx/vue
