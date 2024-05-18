@@ -1,5 +1,5 @@
 deployment:
   tasks:
     - export DEPLOY_PATH=/home/enstedu/posgrados.enst.edu.mx
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - /opt/cpanel/ea-nodejs18/bin/npm install
+    - /opt/cpanel/ea-nodejs18/bin/ng build --configuration production --output-path dist --base-href /
